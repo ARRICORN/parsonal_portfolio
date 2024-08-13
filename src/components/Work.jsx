@@ -20,6 +20,7 @@ import "swiper/css/pagination";
 const Work = () => {
   return (
     <div className="w-full md:w-11/12   mx-auto py-10  text-white">
+      <h1 className="text-2xl py-5">See My Work</h1>
       <Swiper
         spaceBetween={0}
         pagination={{
