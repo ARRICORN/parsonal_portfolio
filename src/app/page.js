@@ -1,7 +1,9 @@
 import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
 import Work from "@/components/Work";
-import Image from "next/image";
+import About from "./component/about";
+import Expericnce from "./component/Expericnce";
+import Contact from "./component/Contact/Contact";
 
 export default function Home() {
   return (
@@ -9,6 +11,9 @@ export default function Home() {
       <Navbar />
       <Banner />
       <Work />
+      <About />
+      <Expericnce />
+      <Contact />
     </main>
   );
 }
