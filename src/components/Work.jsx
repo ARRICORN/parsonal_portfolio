@@ -16,11 +16,20 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { Inknut_Antiqua } from "@next/font/google";
+const inknutAntiqua = Inknut_Antiqua({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
 const Work = () => {
   return (
     <div className="w-full md:w-11/12   mx-auto py-10  text-white">
-      <h1 className="text-2xl py-5">See My Work</h1>
+      <h1
+        className={`text-2xl md:text-4xl  py-5 ml-5 md:ml-1 ${inknutAntiqua.className}`}
+      >
+        See My Work
+      </h1>
       <Swiper
         spaceBetween={0}
         pagination={{
