@@ -15,13 +15,13 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a>About</a>
+        <a className="text-2xl md:text-xl">About</a>
       </li>
       <li>
-        <a>Work</a>
+        <a className="text-2xl md:text-xl">Work</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a className="text-2xl md:text-xl">Contact</a>
       </li>
     </>
   );
