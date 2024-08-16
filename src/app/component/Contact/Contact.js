@@ -15,7 +15,7 @@ const inknutAntiqua = Inknut_Antiqua({
 const Contact = () => {
   return (
     <>
-      <footer className="max-w-[1400px] m-auto px-5">
+      <footer id="contact" className="max-w-[1400px] m-auto px-5">
         <div className={inknutAntiqua.className}>
           {" "}
           <p className="text-5xl line pt-12 text-white pb-12">Let’s Connect</p>

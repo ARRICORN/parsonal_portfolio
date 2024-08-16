@@ -7,6 +7,7 @@ import { RxCross1 } from "react-icons/rx";
 import { motion } from "framer-motion";
 import { Inknut_Antiqua } from "@next/font/google";
 import { IoMenuSharp } from "react-icons/io5";
+import Link from "next/link";
 
 const inknutAntiqua = Inknut_Antiqua({
   subsets: ["latin"],
@@ -21,31 +22,43 @@ const Navbar = () => {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
+
   const navItems = (
     <>
       <li>
-        <a className="text-2xl md:text-xl">About</a>
+        <a href="#about" className="text-2xl md:text-xl">
+          About
+        </a>
       </li>
       <li>
-        <a className="text-2xl md:text-xl">Work</a>
+        <a href="#work" className="text-2xl md:text-xl">
+          Work
+        </a>
       </li>
       <li>
-        <a className="text-2xl md:text-xl">Contact</a>
+        <a href="#contact" className="text-2xl md:text-xl">
+          Contact
+        </a>
       </li>
     </>
   );
 
   return (
-    <div className={`navbar w-full px-3 md:px-12 ${inknutAntiqua.className}  `}>
+    <div
+      className={`navbar w-full px-3 md:px-12 sticky top-0 left-0 right-0 z-50 bg-gradient-custom ${inknutAntiqua.className}  `}
+    >
       {/* Left */}
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl mb-3   md:mb-4 -ml-10 md:ml-[-20px] ">
+        <Link
+          href="/"
+          className="btn btn-ghost text-xl mb-3   md:mb-4 -ml-10 md:ml-[-20px] "
+        >
           <Image
             alt="logo"
             className="w-[84px] md:w-[176px] h-[50px] md:h-[76px] "
             src={logo}
           ></Image>
-        </a>
+        </Link>
       </div>
 
       {/* Center */}

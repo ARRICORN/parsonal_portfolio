@@ -24,7 +24,7 @@ const inknutAntiqua = Inknut_Antiqua({
 });
 const Work = () => {
   return (
-    <div className="w-full md:w-11/12   mx-auto py-10  text-white">
+    <div id="work" className="w-full md:w-11/12   mx-auto py-10  text-white">
       <h1
         className={`text-2xl md:text-4xl  py-5 ml-5 md:ml-1 ${inknutAntiqua.className}`}
       >
@@ -65,10 +65,10 @@ const Work = () => {
               </h1>
               <div className="flex justify-between items-center">
                 <div className="flex gap-3 font-light">
-                  <span className="bg-[#00980F] px-2 py-0.2 rounded-xl inline-block">
+                  <span className="bg-[#00980F] px-2 py-0.1 rounded-xl inline-block">
                     Landing Page
                   </span>
-                  <span className="bg-[#00980F] px-2 py-0.5 rounded-xl inline-block">
+                  <span className="bg-[#00980F] px-2 py-0.1 rounded-xl inline-block">
                     Website Design
                   </span>
                 </div>
